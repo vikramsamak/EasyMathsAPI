@@ -5,6 +5,7 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const { response } = require("express");
 const port = 4500;
+const host='0.0.0.0';
 
 global.result = undefined;
 
@@ -57,4 +58,4 @@ app.get("/calc", function (req, res) {
     });
 });
 
-app.listen(port);
+app.listen(port,host);
