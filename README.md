@@ -1,7 +1,7 @@
 
 # EasyMathsAPI Website 
 
-A simple website made with nodejs and bootstrap.
+A simple website made with nodejs and bootstrap to demonstrate how API works.
 
 
 ## Documentation
