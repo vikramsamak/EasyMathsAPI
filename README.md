@@ -3,13 +3,6 @@
 
 A simple website made with nodejs and bootstrap.
 
-## Screenshots
-
-![Home - Page](https://github.com/vikramsamak/EasyMathsAPI-Website/blob/c171e8110ecabe262633934cdcd1af9e5bb616fc/screenshots/EasyMathsAPI%20_%20Home.png)
-
-![About Us - Page](https://github.com/vikramsamak/EasyMathsAPI-Website/blob/c171e8110ecabe262633934cdcd1af9e5bb616fc/screenshots/EasyMathsAPI%20_%20About%20Us.png)
-
-![Contact US -Page](https://github.com/vikramsamak/EasyMathsAPI-Website/blob/c171e8110ecabe262633934cdcd1af9e5bb616fc/screenshots/EasyMathsAPI%20_%20Contact%20Us.png)
 
 ## Documentation
 
