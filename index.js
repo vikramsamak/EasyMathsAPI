@@ -23,6 +23,21 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
+//ABOUT US PAGE
+app.get("/aboutus", function (req, res) {
+  res.render("aboutus");
+});
+
+//CONTACT US PAGE
+app.get("/contactus", function (req, res) {
+  res.render("contactus");
+});
+
+//DOCS PAGE
+app.get("/docs", function (req, res) {
+  res.render("docs");
+});
+
 //FORM DATA ACESSING AND GETING RESPECTIVE RESPONSE FROM API(DETA CLOUD)
 app.get("/calc", function (req, res) {
   const options = {
@@ -34,18 +49,12 @@ app.get("/calc", function (req, res) {
     .request(options)
     .then(function (response) {
       result = response.data;
-      console.log(result);
+      //console.log(result);
       res.send(result);
     })
     .catch(function (error) {
       console.error(error);
     });
-});
-
-//GET REQ FROM VANILA JS TO NODE JS TO FETCH DATA
-app.get("/getdata", async (req, res) => {
-  res.send(result);
-  console.log(result);
 });
 
 app.listen(port);
