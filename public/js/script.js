@@ -16,7 +16,7 @@ async function req() {
     return response;
     
   });
-  console.log(response)
+  console.log(response.json())
   document.getElementById("add").value = response.ADDITION;
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
