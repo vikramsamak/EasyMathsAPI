@@ -13,7 +13,8 @@ async function req() {
   };
 
   const response = await fetch(url, options).then((response) => {
-    return response.json();
+    return response;
+    
   });
 
   document.getElementById("add").value = response.ADDITION;
