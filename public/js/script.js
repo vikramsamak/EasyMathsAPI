@@ -7,6 +7,7 @@ async function req() {
   url = "http://localhost:4500/calc/?num1=" + num1 + "&num2=" + num2;
   
   const options = {
+    mode:"no-cors",
     method: "GET",
     headers: { "Access-Control-Allow-Origin": "*" },
   };
