@@ -8,7 +8,7 @@ async function req() {
 
   const options = {
     method: "GET",
-    //headers: { "Access-Control-Allow-Origin": "*" },
+    headers: { "Access-Control-Allow-Origin": "*" },
   };
 
   const response = await fetch(url, options).then((response) => {
