@@ -93,8 +93,31 @@
             </div>
 
         </form>
-    </div>
-    <script src="http://localhost:4500/js/script.js"></script>
+    </div><script>
+        async function req() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+          
+            //console.log(num1, num2);
+          
+            url = "http://localhost:4500/calc/?num1=" + num1 + "&num2=" + num2;
+            
+            const options = {
+              method: "GET",
+              headers: { "Access-Control-Allow-Origin": "*" },
+            };
+          
+            const response = await fetch(url, options).then((response) => {
+              return response.json();
+            });
+          
+            document.getElementById("add").value = response.ADDITION;
+            document.getElementById("sub").value = response.SUB;
+            document.getElementById("mul").value = response.MULTIPLICATION;
+            document.getElementById("div").value = response.DIV;
+          }
+    </script>
+    <!--<script src="http://localhost:4500/js/script.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
