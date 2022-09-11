@@ -5,18 +5,16 @@ async function req() {
   //console.log(num1, num2);
 
   url = "http://localhost:4500/calc/?num1=" + num1 + "&num2=" + num2;
-  
+
   const options = {
-    mode:"no-cors",
     method: "GET",
     headers: { "Access-Control-Allow-Origin": "*" },
   };
 
-  const response = fetch(url, options).then((response) => {
+  const response = await fetch(url, options).then((response) => {
     return response.json();
-    
   });
-  console.log(response)
+  console.log(response);
   document.getElementById("add").value = response.ADDITION;
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
