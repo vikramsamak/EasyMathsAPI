@@ -20,3 +20,5 @@ async function req() {
   document.getElementById("mul").value = response.MULTIPLICATION;
   document.getElementById("div").value = response.DIV;
 }
+
+module.exports = req
