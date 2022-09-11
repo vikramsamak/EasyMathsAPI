@@ -12,8 +12,8 @@ async function req() {
     headers: { "Access-Control-Allow-Origin": "*" },
   };
 
-  const response = await fetch(url, options).then((response) => {
-    return response.text();
+  const response = fetch(url, options).then((response) => {
+    return response.json();
     
   });
   console.log(response)
