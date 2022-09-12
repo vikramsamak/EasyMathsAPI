@@ -19,7 +19,7 @@ async function req() {
     return response.json();
   });
 
-  document.getElementById("add").value = parseFloat(response.ADDITION).toFixed(1);
+  document.getElementById("add").value = parseFloat(response.ADDITION);
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
   document.getElementById("div").value = response.DIV;
