@@ -4,7 +4,7 @@ async function req() {
 
   //console.log(num1, num2);
 
-  url = "http://localhost:4500/calc/?num1=" + num1 + "&num2=" + num2;
+  url = "https://easymathsapi-website.herokuapp.com/calc/?num1=" + num1 + "&num2=" + num2;
 
   const options = {
     method: "GET",
