@@ -49,7 +49,6 @@ app.get("/calc", function (req, res) {
     .request(options)
     .then(function (response) {
       result = response.data;
-      //console.log(result);
       res.send(result);
     })
     .catch(function (error) {

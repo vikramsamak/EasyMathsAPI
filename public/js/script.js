@@ -14,7 +14,7 @@ async function req() {
   const response = await fetch(url, options).then((response) => {
     return response.json();
   });
-  console.log(response);
+ 
   document.getElementById("add").value = response.ADDITION;
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
