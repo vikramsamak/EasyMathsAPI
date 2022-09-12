@@ -21,4 +21,3 @@ async function req() {
   document.getElementById("div").value = response.DIV;
 }
 
-module.exports = req
