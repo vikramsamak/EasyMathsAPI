@@ -4,7 +4,11 @@ async function req() {
 
   //console.log(num1, num2);
 
-  url = "https://easymathsapi-website.herokuapp.com/calc/?num1=" + num1 + "&num2=" + num2;
+  url =
+    "https://easymathsapi-website.herokuapp.com/calc/?num1=" +
+    num1 +
+    "&num2=" +
+    num2;
 
   const options = {
     method: "GET",
@@ -14,11 +18,9 @@ async function req() {
   const response = await fetch(url, options).then((response) => {
     return response.json();
   });
- 
+
   document.getElementById("add").value = response.ADDITION;
-  console.log(typeof(response.ADDITION));
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
   document.getElementById("div").value = response.DIV;
 }
-
