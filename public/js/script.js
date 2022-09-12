@@ -16,6 +16,7 @@ async function req() {
   });
  
   document.getElementById("add").value = response.ADDITION;
+  console.log(typeof(response.ADDITION));
   document.getElementById("sub").value = response.SUB;
   document.getElementById("mul").value = response.MULTIPLICATION;
   document.getElementById("div").value = response.DIV;
