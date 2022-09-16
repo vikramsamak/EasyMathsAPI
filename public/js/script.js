@@ -2,8 +2,6 @@ async function req() {
   let num1 = parseFloat(document.getElementById("num1").value);
   let num2 = parseFloat(document.getElementById("num2").value);
 
-  //console.log(num1, num2);
-
   url =
     "https://easymathsapi-website.herokuapp.com/calc/?num1=" +
     num1 +
